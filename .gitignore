@@ -1,0 +1,58 @@
+# --- Environment & Secrets ---
+.env
+*.env
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Virtual Environments ---
+venv/
+env/
+ENV/
+.venv/
+
+# --- Database ---
+database/sqlite.db
+database/*.db-journal
+
+# --- Vector Store / Generated Data ---
+data/vector_store/*
+!data/vector_store/.gitkeep
+data/pdfs/*
+!data/pdfs/.gitkeep
+
+# --- Logs ---
+logs/*.log
+logs/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Streamlit ---
+.streamlit/secrets.toml
